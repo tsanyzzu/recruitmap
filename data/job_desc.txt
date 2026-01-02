@@ -1,0 +1,19 @@
+Role: Senior Software Engineer (Backend Focus)
+
+About Us: We are a fintech startup scaling our payment infrastructure.
+
+Must-Have Skills (Hard Skills):
+- Minimum 4 years experience with Python (Django/FastAPI).
+- Strong understanding of SQL and Database Optimization (PostgreSQL).
+- Experience with Cloud Services (AWS/GCP).
+- Experience building RESTful APIs.
+
+Nice-to-Have Skills:
+- Experience with Docker & Kubernetes.
+- Knowledge of Go or Rust.
+- Previous experience in Fintech/Banking.
+
+Soft Skills & Culture Fit:
+- Problem-solving mindset (able to debug complex issues).
+- Good communication skills (mentoring junior devs).
+- Adaptability (agile environment).
