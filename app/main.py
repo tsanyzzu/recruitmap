@@ -69,7 +69,8 @@ if process_btn and uploaded_files and job_desc:
         
         for candidate in results_list:
             # Expander untuk setiap kandidat
-            with st.expander(f"{candidate['candidate_name']} (Score: {candidate['match_score']}) - {candidate['hiring_decision']}"):
+            candidate_expander = st.expander(f"{candidate['candidate_name']} (Score: {candidate['match_score']}) - {candidate['hiring_decision']}")
+            with candidate_expander:
                 col1, col2 = st.columns(2)
                 
                 with col1:

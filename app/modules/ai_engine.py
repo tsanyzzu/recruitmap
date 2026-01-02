@@ -7,11 +7,12 @@ from modules.schema import ScreeningAnalysis
 
 # Load API Key
 load_dotenv()
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+MODEL_NAME = "gemini-2.5-flash-lite"
 
 def analyze_candidate(cv_text, job_desc_text):
     try:
-        client = genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))
-
+        client = genai.Client(api_key=GEMINI_API_KEY)
         prompt = f"""
         You are a Senior Talent Acquisition Specialist.
         
@@ -28,7 +29,7 @@ def analyze_candidate(cv_text, job_desc_text):
         """
 
         response = client.models.generate_content(
-            model='gemini-2.5-flash-lite', 
+            model=MODEL_NAME, 
             contents=prompt,
             config=types.GenerateContentConfig(
                 response_mime_type='application/json',
