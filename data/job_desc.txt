@@ -1,3 +1,5 @@
+Notes: this is default Job Description. You can edit the Description based on your criteria.
+
 Role: Senior Software Engineer (Backend Focus)
 
 About Us: We are a fintech startup scaling our payment infrastructure.

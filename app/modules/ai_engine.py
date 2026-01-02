@@ -11,6 +11,13 @@ GEMINI_API_KEY = os.getenv("BACKUP_GEMINI_API_KEY")
 MODEL_NAME = "gemini-3-flash-preview"
 
 def analyze_candidate(cv_text, job_desc_text):
+    """
+    fungsi untuk menganalisis CV kandidat terhadap deskripsi pekerjaan menggunakan Google Gemini API.
+    
+    :param cv_text: text CV dari hasil ekstraksi
+    :param job_desc_text: deskripsi pekerjaan dalam bentuk text
+    :return: JSON string berisi analisis sesuai schema ScreeningAnalysis
+    """ 
     try:
         client = genai.Client(api_key=GEMINI_API_KEY)
         prompt = f"""

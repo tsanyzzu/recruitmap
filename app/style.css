@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+.stApp {
+    background-color: #0f1923;
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3 {
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.5px;
+}
+
+p, label, .stMarkdown, .stText {
+    color: #cbd5e1 !important;
+    font-size: 1rem !important;
+    line-height: 1.6;
+}
+
+[data-testid="stVerticalBlock"] > [style*="flex-direction: column;"] > [data-testid="stVerticalBlock"] {
+    background-color: #1a242f;
+    border: 1px solid #2d3b4e;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+[data-testid="stVerticalBlock"] > [style*="flex-direction: column;"] > [data-testid="stVerticalBlock"]:hover {
+    border-color: #1f8cf9;
+}
+
+.stTextArea textarea {
+    background-color: #25303d !important;
+    color: #ffffff !important;
+    border: 1px solid #3a4755 !important;
+    border-radius: 8px !important;
+    font-family: 'Inter', monospace !important;
+}
+
+.stTextArea textarea:focus {
+    border-color: #1f8cf9 !important;
+    box-shadow: 0 0 0 2px rgba(31, 140, 249, 0.2) !important;
+}
+
+.stTextArea label {
+    font-size: 0.9rem !important;
+    color: #94a3b8 !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+[data-testid="stFileUploader"] {
+    padding: 10px 0;
+}
+
+[data-testid="stFileUploader"] section {
+    background-color: #25303d !important;
+    border: 2px dashed #475569 !important;
+    border-radius: 12px !important;
+}
+
+[data-testid="stFileUploader"] section:hover {
+    background-color: rgba(31, 140, 249, 0.1) !important;
+    border-color: #1f8cf9 !important;
+}
+
+[data-testid="stFileUploader"] small {
+    color: #94a3b8 !important;
+}
+
+.stButton button {
+    background: linear-gradient(135deg, #1f8cf9 0%, #0d6efd 100%) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    padding: 0.8rem 2rem !important;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 14px 0 rgba(31, 140, 249, 0.39);
+    width: 100%;
+    margin-top: 10px;
+}
+
+.stButton button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(31, 140, 249, 0.23);
+}
+
+.stButton button:active {
+    transform: translateY(1px);
+}
+
+[data-testid="stDataFrame"] {
+    border: 1px solid #2d3b4e;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+[data-testid="stDataFrame"] {
+    background-color: #1a242f;
+    border: 1px solid #2d3b4e;
+    border-radius: 12px;
+    padding: 0 !important;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+[data-testid="stDataFrame"] th {
+    background-color: #25303d !important;
+    color: #94a3b8 !important;
+    font-size: 0.85rem !important;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600 !important;
+    border-bottom: 1px solid #3a4755 !important;
+}
+
+[data-testid="stDataFrame"] td {
+    color: #e2e8f0 !important;
+    font-size: 0.95rem !important;
+    font-family: 'Inter', sans-serif !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    vertical-align: middle !important;
+}
+
+[data-testid="stDataFrame"] tr:hover td {
+    background-color: rgba(31, 140, 249, 0.05) !important;
+    cursor: default;
+}
+
+[data-testid="stDataFrame"] [role="progressbar"] > div {
+    background-color: #1f8cf9 !important;
+}
+
+[data-testid="stDataFrame"] th {
+    background-color: #1f2937 !important;
+    color: #e2e8f0 !important;
+}
+
+header[data-testid="stHeader"] {
+    display: none !important;
+}
+
+.block-container {
+    padding-top: 2rem !important; 
+    padding-bottom: 3rem !important;
+    max-width: 95% !important;
+}
+
+h1 {
+    margin-top: -1rem !important; 
+}
+
+.stDeployButton {
+    display:none;
+}
+
+footer {
+    visibility: hidden;
+}
+
+.stProgress > div > div > div > div {
+    background-image: linear-gradient(to right, #1f8cf9, #34d399);
+}
+
+.stTabs [data-baseweb="tab-list"] {
+    gap: 20px;
+    border-bottom: 1px solid #2d3b4e;
+    padding-bottom: 5px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    height: 50px;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border: none;
+    color: #94a3b8;
+    font-weight: 600;
+}
+
+.stTabs [data-baseweb="tab"]:hover {
+    color: #1f8cf9;
+    background-color: transparent;
+}
+
+.stTabs [aria-selected="true"] {
+    color: #ffffff !important;
+    background-color: transparent;
+}
+
+.stTabs [data-baseweb="tab-highlight"] {
+    background-color: #1f8cf9;
+    height: 3px;
+    border-radius: 2px;
+}
+
+.stTabs [data-baseweb="tab"]:focus {
+    outline: none;
+}
+
+.skill-pill-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.skill-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    background-color: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    color: #fca5a5;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.skill-pill:hover {
+    background-color: rgba(239, 68, 68, 0.2);
+    border-color: #ef4444;
+}
+
+.skill-icon {
+    margin-right: 6px;
+    font-weight: bold;
+    color: #ef4444;
+}
+
+.question-card {
+    background-color: #25303d;
+    border-left: 4px solid #1f8cf9;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.95rem;
+    color: #e2e8f0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.question-header {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #94a3b8;
+    margin-bottom: 4px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.culture-box {
+    background-color: #1a242f;
+    border: 1px solid #2d3b4e;
+    padding: 16px;
+    border-radius: 12px;
+    font-style: italic;
+    color: #cbd5e1;
+    position: relative;
+    margin-top: 10px;
+}
+
+.culture-box::before {
+    content: '"';
+    font-size: 3rem;
+    color: #3a4755;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-family: serif;
+}
