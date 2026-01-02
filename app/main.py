@@ -53,7 +53,7 @@ with st.container():
 
     with col1:
         # LEFT CARD: CONTEXT 
-        st.markdown('### 💼 Job Context')
+        st.markdown('### Job Context')
         st.markdown('Definisikan kriteria posisi untuk kalibrasi AI.')
     
         # Navigasi Sumber Job Description
