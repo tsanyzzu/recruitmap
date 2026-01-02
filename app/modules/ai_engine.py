@@ -7,8 +7,8 @@ from modules.schema import ScreeningAnalysis
 
 # Load API Key
 load_dotenv()
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-MODEL_NAME = "gemini-2.5-flash-lite"
+GEMINI_API_KEY = os.getenv("BACKUP_GEMINI_API_KEY")
+MODEL_NAME = "gemini-3-flash-preview"
 
 def analyze_candidate(cv_text, job_desc_text):
     try:
