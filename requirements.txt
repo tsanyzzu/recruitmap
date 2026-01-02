@@ -2,6 +2,7 @@ streamlit
 google-genai
 pymupdf
 pandas
+Pillow
 pydantic
 python-dotenv
 plotly
